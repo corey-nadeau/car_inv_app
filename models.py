@@ -66,7 +66,7 @@ class Car(db.Model):
         self.user_token = user_token
 
     def __repr__(self):
-        return f'The following car has been added to the database: {self.year} {self.make}, {self.model}'
+        return f'The following car has been added to the database: {self.model}'
     def set_id(self):
         return(secrets.token_urlsafe())
     
